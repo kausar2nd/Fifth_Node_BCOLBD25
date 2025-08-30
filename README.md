@@ -33,6 +33,7 @@ EXIREN implements a three-stage detection pipeline:
 │   ├── style.css             # Styling and animations
 │   └── script.js             # Frontend JavaScript
 ├── YOLOv11n_custom_fire.pt   # Custom trained YOLO model
+├── README.md                 # Project README file
 └── requirements.txt          # Python dependencies
 ```
 
@@ -279,5 +280,6 @@ This project is part of research on "Reducing False Alarms in Fire Detection Sys
 ## Support
 
 For issues and questions, check the system log in the web interface or run the CLI version for detailed debugging information.
+
 
 
