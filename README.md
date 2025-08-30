@@ -23,6 +23,20 @@ EXIREN implements a three-stage detection pipeline:
 - ⚙️ **Web-based Control**: Responsive web interface accessible from any device
 - 🔧 **Configurable Parameters**: Adjustable detection thresholds and system settings
 
+## File Structure
+
+```bash
+├── app.py                    # Flask web application
+├── System_Algorithm.py       # CLI version (original)
+├── templates/
+│   └── index.html            # Main web interface
+├── static/
+│   ├── style.css             # Styling and animations
+│   └── script.js             # Frontend JavaScript
+├── YOLOv11n_custom_fire.pt   # YOLO model weights
+└── requirements.txt          # Python dependencies
+```
+
 ## 📋 Requirements
 
 ### Hardware Requirements
@@ -252,20 +266,6 @@ The YOLO model detects the following fire types:
 
 ## Development
 
-### File Structure
-
-```bash
-├── app.py                    # Flask web application
-├── System_Algorithm.py       # CLI version (original)
-├── templates/
-│   └── index.html            # Main web interface
-├── static/
-│   ├── style.css             # Styling and animations
-│   └── script.js             # Frontend JavaScript
-├── YOLOv11n_custom_fire.pt   # YOLO model weights
-└── requirements.txt          # Python dependencies
-```
-
 ### Adding Features
 
 1. **New Sensors**: Update `FireDetectionSystem` class
@@ -280,3 +280,4 @@ This project is part of research on "Reducing False Alarms in Fire Detection Sys
 ## Support
 
 For issues and questions, check the system log in the web interface or run the CLI version for detailed debugging information.
+
