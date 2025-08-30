@@ -39,15 +39,28 @@ EXIREN implements a three-stage detection pipeline:
 - Modern web browser
 - WiFi network for ESP32 connectivity
 
-## 🛠️ Installation & Setup
+## 🏃‍♂️ How to Run This Project
 
-### 1. Install Python Dependencies
+### Step 1: Clone the Repository
+
+First, clone the repository to your local machine:
+
+```bash
+git clone https://github.com/kausar2nd/Fifth_Node_BCOLBD25.git
+cd Fifth_Node_BCOLBD25
+```
+
+### Step 2: Install Python Dependencies
+
+Install the required Python packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Hardware Setup
+### Step 3: Hardware Setup (Optional)
+
+If you have the hardware components for full AI + IoT functionality:
 
 1. **ESP32 Configuration**:
    - Flash the provided `ESP32_Setup/ESP32_Setup.ino` to your ESP32
@@ -59,9 +72,27 @@ pip install -r requirements.txt
    - Connect USB camera to your computer
    - Ensure camera is accessible as device index 0
 
-### 3. Model Setup
+### Step 4: Model Setup
 
 Ensure the pre-trained YOLO model `YOLOv11n_custom_fire.pt` is present in the root directory.
+
+### Step 5: Run the Application
+
+Start the Flask web application:
+
+```bash
+python app.py
+```
+
+### Step 6: Access the Web Interface
+
+- Open your web browser
+- Navigate to `http://localhost:5000`
+- The web interface will load with the fire detection system dashboard
+- Configure ESP32 IP and detection thresholds if you have the hardware
+- Start monitoring using the web interface
+
+> **Note**: The system can run in demo mode without physical hardware for testing the web interface and AI model capabilities.
 
 ## 🚀 Usage
 
@@ -224,15 +255,15 @@ The YOLO model detects the following fire types:
 ### File Structure
 
 ```bash
-├── app.py              # Flask web application
-├── System_Algorithm.py     # CLI version (original)
+├── app.py                    # Flask web application
+├── System_Algorithm.py       # CLI version (original)
 ├── templates/
-│   └── index.html          # Main web interface
+│   └── index.html            # Main web interface
 ├── static/
-│   ├── style.css          # Styling and animations
-│   └── script.js          # Frontend JavaScript
-├── YOLOv11n_custom_fire.pt  # YOLO model weights
-└── requirements.txt        # Python dependencies
+│   ├── style.css             # Styling and animations
+│   └── script.js             # Frontend JavaScript
+├── YOLOv11n_custom_fire.pt   # YOLO model weights
+└── requirements.txt          # Python dependencies
 ```
 
 ### Adding Features
