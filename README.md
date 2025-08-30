@@ -27,13 +27,12 @@ EXIREN implements a three-stage detection pipeline:
 
 ```bash
 ├── app.py                    # Flask web application
-├── System_Algorithm.py       # CLI version (original)
 ├── templates/
 │   └── index.html            # Main web interface
 ├── static/
 │   ├── style.css             # Styling and animations
 │   └── script.js             # Frontend JavaScript
-├── YOLOv11n_custom_fire.pt   # YOLO model weights
+├── YOLOv11n_custom_fire.pt   # Custom trained YOLO model
 └── requirements.txt          # Python dependencies
 ```
 
@@ -280,4 +279,5 @@ This project is part of research on "Reducing False Alarms in Fire Detection Sys
 ## Support
 
 For issues and questions, check the system log in the web interface or run the CLI version for detailed debugging information.
+
 
